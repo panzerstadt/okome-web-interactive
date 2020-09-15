@@ -31,6 +31,14 @@ const Corner: React.FC<{ type: CornerType; position: CornerPosition }> = ({
   );
 };
 
+const AnimatedCharacter = () => {
+  return (
+    <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+      <img src="/images/okomekun.png" />
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <div className="bg-red-100">
@@ -43,6 +51,7 @@ export default function Home() {
         <Corner type="hear" position="topRight" />
         <Corner type="know" position="bottomLeft" />
         <Corner type="see" position="bottomRight" />
+        <AnimatedCharacter />
       </div>
     </div>
   );
